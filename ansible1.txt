@@ -1,31 +1,15 @@
-
-
 ansible 172.31.13.53 -b -m copy -a "src=/home/ansible/app.txt dest=/home/ansible/"
-
 ansible 172.31.13.53 -b -m copy -a "src=/home/ansible/app.txt dest=/home/ansible"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/app.txt state=absent"
-
 ansible 172.31.13.53 -b -m shell -a "cd /home/ansible/app"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/sam state-directory"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/ram state absent"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/file.txt state=touch"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/file.txt state-absent"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/file.txt state-touch mode=0777"
-
 ansible 172.31.13.53 -b -m file -a "path=/home/ansible/file.txt state-absent mode=0777"
-
 ansible 172.31.13.53 -b -m package -a "name-git state-installed"
-
 ansible 172.31.13.53 -b -m package -a "name=docker state-installed"
-
 ansible 172.31.13.53 -b -m shell -a "docker pull httpd"
-
 ansible 172.31.13.53 -b -m shell -a "docker rund-name httpd-container httpd"
-
 ansible 172.31.13.53 -b -m command -a "git clone https://github.com/Sanjana22-YA/task.git"
